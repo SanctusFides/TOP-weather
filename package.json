@@ -1,0 +1,14 @@
+{
+  "name": "tor-weather",
+  "version": "1.0.0",
+  "description": "My primary objective of this course is to incorporate Javascript into a resume project. All styling and CSS will be minimally focused on",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
