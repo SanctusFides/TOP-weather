@@ -17,6 +17,15 @@ async function loadDefault() {
         //Sets event listener to the search button to run the loadlocation function - only needed on initial load
         const searchBtn = document.getElementById("search-btn");
         searchBtn.addEventListener("click", loadLocation);
+
+        // Adds a listener to the input element for the search text field listening for the enter key
+        const searchBar = document.getElementById("search-bar");
+        searchBar.addEventListener("keyup", function (event) {
+            if (event.code === "Enter") { 
+                loadLocation();
+            }
+        });
+
         //creates a listener on the checkbox element that toggles between F and C temps
         const tempToggle = document.getElementById("temp-toggle");
         tempToggle.addEventListener("click",changeTempFormat);
